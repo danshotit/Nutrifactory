@@ -1,0 +1,467 @@
+*body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+    }
+    .header{
+      min-height: 100vh;
+      width: 100%;
+      background-image:url(images/heri\ \ bg\(1\)\(1\)\(1\)\(1\).png);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    
+    }
+   nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+   }
+   .nav img{
+    width: 40px;
+    
+
+   }
+  .nav-links{
+    flex: 1;
+    text-align: right;
+   }
+   .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+   
+}
+.nav-links ul li a{
+  color:#000;
+  text-decoration: none;
+  font-size: 13px;
+}
+    .nav-links ul li::after{
+      content:0 ;
+      width: 100%;
+      height: 2px;
+    background: black; 
+    display: block; 
+    margin: auto; 
+    transition: 0.5s;
+   }
+    
+    .nav-links ul li:hover::after{
+      width: 100%;
+      background: #000;
+      transition: 1s;
+         }
+         .text-box{
+          width: 90%;
+           color: black;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           text-align: center;
+         }
+         .text-box h1{
+          font-size: 62px;
+         }
+         .text-box p{
+          margin: 10px 0 40px;
+          font-size: 20px;
+          color: black;
+         }
+  
+    .hero-btn{
+     display: inline-block;
+     text-decoration: none;
+     color: black;
+     border: 1px solid black;
+     padding: 12px 34px;
+     font-size: 14px;
+     background: transparent;
+     position: relative;
+     cursor: pointer;
+    }
+    .hero-btn:hover{
+      border: 1px solid yellow;
+      background:hwb(330 2% 1%);
+      transition: 1s;
+    }
+    nav .fa{
+      display: none;
+    }
+    @media(max-width:700px){
+      .text-box h1{
+        font-size: 30px;
+      }
+      .nav-links ul li{
+        display: block;
+      }
+      .nav-links{
+        position: fixed;
+        background: rgb(88, 86, 86);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+      }
+      nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+      }
+      .nav-links ul{
+        padding: 30px;
+      }
+      
+    }
+   
+  
+    /*------Aboutus-------*/
+    .Aboutus{
+     width: 80%;
+     margin: auto;
+     text-align: center;
+     padding-top: 100px;
+    }
+    h1{
+     font-size: 36px;
+     font-weight: 600;
+    }
+    p{
+     color: #000;
+     font-size: 14px;
+    font-weight: 300;
+     line-height:22px;
+     padding: 10px;
+    
+    }
+    .row{
+     margin-top: 5%;
+     display: flex;
+     justify-content: space-between;
+    }
+    .Aboutus-col{
+     flex-basis: 31%;
+     background: #fa7575;
+     border-radius: 10px;
+     margin-bottom: 5%;
+     padding: 20px 12px;
+     box-sizing: border-box;
+     transition: 0.5s;
+    
+    }
+    h3{
+     text-align: center;
+     font-weight: 600;
+     margin: 10px 0;
+    }
+    .Aboutus-col:hover{
+    box-shadow: 0 0 20px 0px yellow;
+    }
+    @media(max-width: 700px){
+    .row{
+    flex-direction: column;
+    }
+  }
+    /*---------Gallery-------*/
+     .Gallery{
+     width: 50%;
+     margin: auto;
+     text-align: center;
+     padding-top: 50px;
+     }
+    .Gallery-col{
+    flex-basis: 32%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+ }
+ .Gallery-col img{
+  width: 100%;
+  display: block;
+
+ }
+
+ /*---------Call to action-----*/
+
+ .cta{
+  min-height: 100vh;
+  background: #e8f0fe;
+  padding: 50px;
+  text-align: center;
+ }
+ 
+ .h2{
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+ }
+button{
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #b41477;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease; 
+}
+button:hover{
+  background-color: #f2f;
+}
+.contact-info{
+  text-align:center;
+}
+.contact-info h3{
+  font-size: 20px;
+  margin-left: 20px;
+  color: #333;
+  text-align: center;
+}
+.contact-info p{
+  margin-bottom: 10px;
+  color: #555;
+}
+.contact-info i{
+  color: #b41477;
+  margin-right: 10px;
+}
+@media screen and(max-width:768px){
+  .container{
+    padding: 20px;
+  }
+  .contact-wrapper{
+    grid-template-columns: repeat(1 fr);
+  }
+  
+}
+
+  
+ /*------footer----*/
+ 
+ .footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+
+ }
+ .footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+ }
+ .icons .fa{
+  color: #f2f;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+ }
+
+ /*---------Aboutus page-------*/
+
+ .sub-header{
+  height: 50vh;
+  width: 100%;
+  background-image:url(images/family\ mix\ aboutus.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: yellow;
+ }
+.sub-header h1{
+  margin-top: 100px;
+}
+.About-us{
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+ p{
+  color: #000;
+  font-size: 14px;
+ font-weight: 300;
+  line-height:22px;
+  padding: 10px;
+  text-align: center;
+ }
+ .row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+ }
+ .Aboutus-col{
+  flex-basis: 31%;
+  background: #fa7575;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+ 
+ }
+ h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+ }
+ .Aboutus-col:hover{
+ box-shadow: 0 0 20px 0px yellow;
+ }
+ @media(max-width: 700px){
+ .row{
+ flex-direction: column;
+ }
+}
+/*--------gallery page------*/
+.sub-header{
+  height: 50vh;
+  width: 100%;
+  background-image:url(images/Nursing\ Mothers\ uji.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: yellow;
+}
+.sub-header h1{
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+}
+h2{
+  text-align: center;
+}
+p{
+  color: #000;
+  font-size: 14px;
+ font-weight: 300;
+  line-height:22px;
+  padding: 10px;
+  text-align: center;
+ 
+ }
+ .Gallery{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  }
+ .Gallery-col{
+ flex-basis: 32%;
+ border-radius: 20px;
+ margin-bottom: 30px;
+ position: relative;
+ overflow: hidden;
+ 
+}
+.Gallery-col img{
+width: 100%;
+display: block;
+}
+/*-------contactus page----*/
+.sub-header{
+  height: 50vh;
+  width: 100%;
+  background-image:url(images/Nursing\ Mothers\ uji.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #b41477;
+}
+.sub-header h1{
+  margin-top: 100px;
+}
+  .cta{
+    min-height: 100vh;
+    background: #e8f0fe;
+    padding: 50px;
+    text-align: center;
+   }
+   .container{
+    max-width: 800px;
+    margin: 0 auto;
+   }
+   .container h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+   }
+  .contact-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  .contact-form{
+    text-align: left;
+  }
+  .contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+    .form-group{
+      margin-bottom: 20px;
+    }
+    input, textarea{
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+      input:focus,
+      textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+      }
+  
+  button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #b41477;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease; 
+  }
+  button:hover{
+    background-color: #f2f;
+  }
+  .contact-info{
+    text-align:left ;
+  }
+  .contact-info h3{
+    font-size: 20px;
+    margin-left: 20px;
+    color: #333;
+    text-align: left;
+  }
+  .contact-info p{
+    margin-bottom: 10px;
+    color: #555;
+  }
+  .contact-info i{
+    color: #b41477;
+    margin-right: 10px;
+  }
+  @media screen and(max-width:768px){
+    .container{
+      padding: 20px;
+    }
+    .contact-wrapper{
+      grid-template-columns: repeat(1 fr);
+    }
+    
+  } 
